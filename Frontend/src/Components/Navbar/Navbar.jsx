@@ -11,11 +11,12 @@ import { IoIosPower } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { RiMenuUnfold3Fill } from "react-icons/ri";
 
-const Navbar = () => {
+const Navbar = ({ sidebarOpen, setSidebarOpen }) => {
     const { darkTheme, toggleTheme } = useTheme();
     const [showSubMenu, setShowSubMenu] = useState(false)
     const [showMenuBtn, setShowMenuBtn] = useState(false)
     const { isLoggedIn } = useAuth()
+
     return (
         <>
             <nav className="navbar">
@@ -48,7 +49,7 @@ const Navbar = () => {
                         </ul>
                         <ul className="mobile-menu">
                             <li>
-                                <RiMenuUnfold3Fill size={25} />
+                                <RiMenuUnfold3Fill size={25} onClick={() => setSidebarOpen(!sidebarOpen)} />
                             </li>
                             <li>
                                 {

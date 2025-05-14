@@ -5,9 +5,8 @@ import { MdDashboard } from "react-icons/md";
 import { MdMessage } from "react-icons/md";
 import { FaBriefcase } from "react-icons/fa6";
 import { GiGraduateCap } from "react-icons/gi";
-import { RiMenuFold4Fill } from "react-icons/ri";
-
-const StudentSidebar = () => {
+import { RiMenuUnfold4Fill } from "react-icons/ri";
+const StudentSidebar = ({ sidebarOpen, setSidebarOpen }) => {
     return (<>
         <div className="student-sidebar">
             <ul>
@@ -18,12 +17,12 @@ const StudentSidebar = () => {
                 <li><Link to="/showNotice"><MdMessage size={24} /><span>Notice</span></Link></li>
             </ul>
         </div>
-        <div className="mobile-sidebar">
+        <div className={`mobile-sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
             <ul>
                 <li className="dashboard-txt"><span>
                     Student Dashboard
                 </span>
-                    <RiMenuFold4Fill size={25} />
+                    <RiMenuUnfold4Fill size={25} onClick={() => setSidebarOpen(!sidebarOpen)} />
                 </li>
                 <li><Link to="/"><MdDashboard size={24} /><span>Dashboard</span></Link></li>
                 <li><Link to="/showDrive"><FaBriefcase size={24} /><span>Placement Drive</span></Link></li>
