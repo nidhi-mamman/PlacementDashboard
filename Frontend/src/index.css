@@ -1,0 +1,92 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --nav-bg: #f8f9fa;
+}
+
+.dark {
+  --bg-color: #2e2e2e;
+  --text-color: #ffffff;
+  --nav-bg: #333;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar {
+  background-color: var(--nav-bg);
+  padding: 1.2rem;
+}
+
+.button {
+  background: #0077b6;
+  color: white;
+  height: 2.4rem;
+  width: 6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+h1 {
+  color: var(--text-color) !important;
+}
+
+.dark h1,
+.dark p,
+.dark .input-eye-icon,
+.dark .bx,
+.dark select .dark .input-box,
+.dark tr,
+.dark th {
+  color: #000000 !important;
+}
+
+.dark a.nav-links,
+.dark .account,
+.dark .sun,
+.dark .admin,
+.dark span,
+.dark .icons,
+.dark p {
+  color: white !important;
+}
+
+.dark .container-section,
+.dark .sidebar,
+.dark .nav-bar {
+  background: var(--bg-color);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.dark .sidebar>ul>li:not(:first-child):not(:last-child):hover p span,
+.dark .submenu1>li:hover p span,
+.dark .sidebar>ul>li:not(:first-child):not(:last-child):hover .icons,
+h5,
+.clock .number span {
+  color: black !important;
+}
+
+.icons {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}

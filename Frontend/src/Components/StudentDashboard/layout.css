@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    display: flex;
+}
+
+.student-sidebar {
+    width: 16rem;
+    min-height: 100vh;
+    background: #3e5c76;
+    padding: 20px !important;
+}
+
+.dashboard-txt {
+    color: white;
+    font-size: 20px;
+}
+
+.student-sidebar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.student-sidebar ul li {
+    width: 100%;
+    padding: 23px !important;
+    display: flex;
+}
+
+.student-sidebar ul li a {
+    color: white;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.student-sidebar ul li:hover:not(:first-child) {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.mobile-sidebar {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .student-sidebar {
+        display: none;
+    }
+
+    .mobile-sidebar {
+        min-height: 100vh !important;
+        width: 23rem;
+        position: absolute;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        min-height: 100vh;
+        background: #3e5c76;
+        padding: 20px !important;
+    }
+
+    .mobile-sidebar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mobile-sidebar ul li {
+        width: 100%;
+        padding: 23px !important;
+        display: flex;
+        gap: 8rem;
+    }
+
+    .mobile-sidebar ul li a {
+        color: white;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .mobile-sidebar ul li:hover:not(:first-child) {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+    }
+
+}
