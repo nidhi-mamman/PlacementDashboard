@@ -55,7 +55,7 @@
 
     .mobile-sidebar {
         min-height: 100vh !important;
-        width: 22rem;
+        width: 23rem;
         position: absolute;
         z-index: 99999;
         top: 0;
@@ -83,6 +83,8 @@
         width: 100%;
         padding: 23px !important;
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 3rem;
     }
 
