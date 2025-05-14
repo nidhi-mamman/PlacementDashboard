@@ -89,7 +89,7 @@ a {
   }
 
   .mobile-menu {
-    gap: 16rem;
+    gap: 16.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between !important;
