@@ -138,32 +138,31 @@ section {
     min-width: auto;
     width: 100%;
     padding: 1.5rem !important;
-    /* Reduce padding */
     gap: 1.5rem;
-    /* Reduce spacing between elements */
   }
 
   .form-box h1 {
     font-size: 24px;
-    /* Reduce heading size */
     text-align: center;
   }
 
   .input-box {
     width: 100% !important;
-    /* Let input take full width inside container */
   }
 
   .radio-group {
     flex-direction: column;
-    /* Stack radio buttons vertically */
     gap: 10px;
   }
 
-  .input-icon,
+
   .input-eye-icon {
     top: 12px;
-    left: 10px;
     right: 10px;
+  }
+
+  .input-icon {
+    top: 18px;
+    left: 12px;
   }
 }
