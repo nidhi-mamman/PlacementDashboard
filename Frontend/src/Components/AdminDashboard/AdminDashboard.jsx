@@ -32,7 +32,7 @@ const AdminDashboard = () => {
     const sorted = [...users];
     if (sort === "fname") sorted.sort((a, b) => a.fname.localeCompare(b.fname));
     else if (sort === "email") sorted.sort((a, b) => a.email.localeCompare(b.email));
-    else if (sort === "tel") sorted.sort((a, b) => Number(a.tel) - Number(b.tel));
+    else if (sort === "branch") sorted.sort((a, b) => a.branch.localeCompare(b.branch));
     return sorted;
   };
 
@@ -132,7 +132,7 @@ const AdminDashboard = () => {
             <MenuItem value="">-------------Select--------------</MenuItem>
             <MenuItem value="fname">Name</MenuItem>
             <MenuItem value="email">Email</MenuItem>
-            <MenuItem value="tel">Mobile No.</MenuItem>
+            <MenuItem value="tel">Branch</MenuItem>
           </Select>
         </div>
 

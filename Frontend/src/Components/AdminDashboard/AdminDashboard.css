@@ -70,8 +70,6 @@
     border: 1px solid #ddd;
 }
 
-
-
 table,
 tr,
 th,
@@ -213,4 +211,28 @@ td .css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w7
     align-items: center;
     justify-content: center;
     padding: 20px !important;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .toggle-icon {
+        display: block;
+    }
+
+    .nav-bar {
+        justify-content: space-between !important;
+    }
+
+    .clock-time {
+        display: none;
+    }
+
+    .total-jobs {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
 }
