@@ -9,7 +9,7 @@ const StudentLayout = () => {
     return (
         <div style={{ display: 'flex', minHeight: '100vh' }}>
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: "hidden" }}>
                 <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
                 <div style={{ padding: '1rem', flex: 1 }}>
                     <Outlet />
