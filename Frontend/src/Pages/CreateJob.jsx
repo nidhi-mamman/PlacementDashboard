@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useAuth } from "../Context/auth.context";
 
 const CreateJob = () => {
-    const { Company_URL, Job_URL } = useAuth();
+    const { Company_URL, Job_URL,fetchJobs } = useAuth();
     const formRef = useRef(null);
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
@@ -55,6 +55,7 @@ const CreateJob = () => {
             if (response.status === 200) {
                 setMessage('Job created successfully!');
                 formRef.current.reset();
+                await fetchJobs();
             } else {
                 setError('Failed to create job.');
             }
