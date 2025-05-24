@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import '../CSS/style.css';
 import { useAuth } from "../Context/auth.context";
 import { Link } from 'react-router-dom'
@@ -15,10 +14,6 @@ const ShowCompany = () => {
         if (diffDays === 1) return "Posted 1 day ago";
         return `Posted ${diffDays} days ago`;
     };
-
-    useEffect(() => {
-        getDaysAgo();
-    }, [])
 
 
     return (
