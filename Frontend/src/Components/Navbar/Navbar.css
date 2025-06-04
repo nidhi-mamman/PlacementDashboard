@@ -1,0 +1,108 @@
+nav {
+  position: relative;
+  padding: 15px !important;
+}
+
+nav.navbar {
+  padding-inline: 1.2rem !important;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-items {
+  width: 100%;
+}
+
+.nav-items-list ul {
+  list-style-type: none;
+}
+
+.submenu {
+  top: 5.5rem;
+  right: 20px;
+  width: 10rem;
+  background: white;
+  border: 1px solid rgb(202, 202, 202);
+  position: absolute;
+  border-radius: 10px;
+}
+
+.submenu ul li {
+  width: 100%;
+  padding: 10px !important;
+  color: rgb(109, 109, 109);
+  border-bottom: 1px solid rgb(194, 194, 194) !important;
+}
+
+.submenu ul li #viewAccount {
+  border-radius: 20px !important;
+  border: 1px solid #0077b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0077b6;
+}
+
+.submenu ul li #logout {
+  color: red;
+}
+
+.flex {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button:hover {
+  color: #0077b6;
+  background: white;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 6px rgb(188, 186, 186);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-items-list .bigScreen {
+    display: none !important;
+  }
+
+  nav.navbar {
+    padding-inline: 0rem !important;
+  }
+
+  .jobs {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .mobile-menu {
+    gap: 16.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    margin-right: 1.5rem !important;
+  }
+
+  .menu-btn {
+    position: absolute;
+    background: white;
+    top: 4rem;
+    right: 20px;
+    padding: 1rem !important;
+    border-radius: 4px;
+    border: 1px solid rgb(212, 209, 209);
+  }
+}

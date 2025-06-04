@@ -1,0 +1,128 @@
+.sidebar {
+    width: 14rem;
+    border: 1px solid rgb(242, 238, 238);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: white;
+}
+
+.sidebar ul li .admin {
+    font-size: 20px;
+    font-weight: 600;
+    width: 10.9rem;
+}
+
+.placements {
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.sidebar>ul {
+    width: 100% !important;
+}
+
+.sidebar>ul>li {
+    padding: 20px !important;
+    gap: 3rem;
+    border-bottom: 1px solid rgb(242, 238, 238) !important;
+}
+
+.sidebar>ul>li>p {
+    width: 100% !important;
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.sidebar>ul>li>a>p {
+    width: 100% !important;
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar>ul>li>a {
+    width: 100% !important;
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar>ul>li:not(:first-child):not(:last-child):hover {
+    background-color: #f0f8ff;
+    color: #007bff;
+    box-shadow: 2px 2px 6px #8cc4ff inset, -2px -2px 6px inset #8cc4ff;
+}
+
+.submenu1 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-left: 48px;
+    border-left: 2px solid #007bff;
+    border-radius: 4px;
+    padding-left: 12px;
+    box-shadow: -2px -2px 4px rgb(180, 180, 180) inset;
+}
+
+.submenu1.show {
+    max-height: 200px;
+}
+
+.submenu1 li {
+    list-style: none;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.submenu1>li>a>p {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submenu1 span {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.submenu1 li.active,
+.submenu1 li:hover {
+    background-color: #e6f0ff;
+    border-left: 3px solid #007bff;
+    font-weight: 500;
+}
+
+.submenu1 li:hover span {
+    color: #007bff;
+}
+
+
+.sidebar>ul>li>a>button {
+    padding: 8px !important;
+    width: 8rem;
+    border-radius: 50px;
+    color: white;
+    background: red;
+    border: 1px solid white;
+    outline: 1px solid red;
+}
+
+.sidebar>ul>.logout {
+    border-bottom: none !important;
+}
+
+@media screen and (max-width:768px) {
+    .sidebar {
+        display: none;
+    }
+}

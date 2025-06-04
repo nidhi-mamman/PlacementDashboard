@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-admin {
+    width: 6rem;
+    height: 6rem;
+}
+
+.container-section {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    background: rgb(250, 250, 250);
+
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.nav-bar {
+    width: 100%;
+    height: 6.5rem;
+    padding-inline: 1rem !important;
+    border: 1px solid rgb(242, 238, 238);
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    margin-bottom: 1rem !important;
+
+}
+
+.nav-bar img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.data {
+    width: 100%;
+    padding: 20px !important;
+}
+
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table,
+tr,
+th,
+td {
+    padding: 20px !important;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    box-shadow: 2px 2px 4px white inset;
+}
+
+td {
+    border-left: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.theme-icon {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.theme-icon.animate {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+
+.sortby {
+    text-align: left;
+    height: 6rem;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px !important;
+}
+
+td .css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+}
+
+.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding-left: 20px !important;
+}
+
+.css-1rju2q6-MuiButtonBase-root-MuiMenuItem-root {
+    padding: 7px !important;
+}
+
+.additional_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.cse,
+.it,
+.me,
+.ece,
+.ce {
+    width: 150px;
+    height: 120px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 15px;
+    text-align: center;
+}
+
+.cse h5,
+.it h5,
+.me h5,
+.ece h5,
+.ce h5 {
+    margin-top: 10px !important;
+}
+
+.cse:hover,
+.it:hover,
+.me:hover,
+.ece:hover,
+.ce:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.cse {
+    border-top: 4px solid #4e73df;
+}
+
+.it {
+    border-top: 4px solid #1cc88a;
+}
+
+.me {
+    border-top: 4px solid #36b9cc;
+}
+
+.ece {
+    border-top: 4px solid #f6c23e;
+}
+
+.ce {
+    border-top: 4px solid #e74a3b;
+}
+
+
+.content-section {
+    margin-top: 1rem !important;
+}
+
+.total-jobs {
+    width: 40rem;
+    padding: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.clock-time {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px !important;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .toggle-icon {
+        display: block;
+    }
+
+    .nav-bar {
+        justify-content: space-between !important;
+    }
+
+    .clock-time {
+        display: none;
+    }
+
+    .total-jobs {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+}
