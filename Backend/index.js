@@ -25,8 +25,17 @@ app.use("/api/jobs", JobsRouter);
 app.use("/api/company", CompanyRouter);
 app.use("/api/alumini", AluminiRouter);
 
-connectDB();
+const startServer = async () => {
+  try {
+    await connectDB(); 
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is listening on Port ${process.env.PORT}`);
-});
+    app.listen(process.env.PORT || 3000, () => {
+      console.log(`🚀 Server running on port ${process.env.PORT}`);
+    });
+
+  } catch (error) {
+    console.error("❌ DB connection failed:", error.message);
+  }
+};
+
+startServer();
