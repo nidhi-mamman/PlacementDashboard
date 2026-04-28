@@ -13,14 +13,12 @@ export const AuthProvider = ({ children }) => {
     const authToken = `Bearer ${token}`
     const isLoggedIn = !!token
 
-    // const Signup_URL = "http://localhost:3000/api"
-    // const Job_URL = "http://localhost:3000/api/jobs"
-    // const Company_URL = "http://localhost:3000/api/company"
-    // const Alumini_URL = "http://localhost:3000/api/alumini"
-    const Signup_URL = "https://placement-dashboard-server.onrender.com/api"
-    const Job_URL = "https://placement-dashboard-server.onrender.com/api/jobs"
-    const Company_URL = "https://placement-dashboard-server.onrender.com/api/company"
-    const Alumini_URL = "https://placement-dashboard-server.onrender.com/api/alumini"
+    const BASE_URL = "https://placement-dashboard-server.onrender.com"
+
+    const Signup_URL = `${BASE_URL}/api`
+    const Job_URL = `${BASE_URL}/api/jobs`
+    const Company_URL = `${BASE_URL}/api/company`
+    const Alumini_URL = `${BASE_URL}/api/alumini`
 
     const logoutUser = () => {
         setToken("")
