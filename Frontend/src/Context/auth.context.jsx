@@ -17,10 +17,10 @@ export const AuthProvider = ({ children }) => {
     // const Job_URL = "http://localhost:3000/api/jobs"
     // const Company_URL = "http://localhost:3000/api/company"
     // const Alumini_URL = "http://localhost:3000/api/alumini"
-    const Signup_URL = "https://placementdashboard-server.onrender.com/api"
-    const Job_URL = "https://placementdashboard-server.onrender.com/api/jobs"
-    const Company_URL = "https://placementdashboard-server.onrender.com/api/company"
-    const Alumini_URL = "https://placementdashboard-server.onrender.com/api/alumini"
+    const Signup_URL = "https://placement-dashboard-server.onrender.com/api"
+    const Job_URL = "https://placement-dashboard-server.onrender.com/api/jobs"
+    const Company_URL = "https://placement-dashboard-server.onrender.com/api/company"
+    const Alumini_URL = "https://placement-dashboard-server.onrender.com/api/alumini"
 
     const logoutUser = () => {
         setToken("")
